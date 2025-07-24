@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Pradeep Samarasinghe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Pradeep S.</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link active">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Me</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section class="blog-section page-section">
+        <div class="container">
+            <h1 class="page-title">Latest Blog Posts</h1>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month">Jan</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Getting Started with React Hooks</h3>
+                        <p>Explore the power of React Hooks and learn how to use useState, useEffect, and custom hooks to build more efficient React applications. This comprehensive guide covers everything from basic concepts to advanced patterns...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">08</span>
+                        <span class="date-month">Jan</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>CSS Grid vs Flexbox: When to Use Which</h3>
+                        <p>Understanding the differences between CSS Grid and Flexbox and knowing when to use each layout system for optimal web design. Learn practical examples and best practices for modern CSS layouts...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">02</span>
+                        <span class="date-month">Jan</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Building RESTful APIs with Node.js</h3>
+                        <p>A comprehensive guide to creating robust RESTful APIs using Node.js, Express, and MongoDB with proper error handling and authentication. Learn industry best practices and security considerations...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">28</span>
+                        <span class="date-month">Dec</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>JavaScript ES6+ Features You Should Know</h3>
+                        <p>Discover the most important ES6+ features that every JavaScript developer should master. From arrow functions to async/await, destructuring, and modules - enhance your coding skills...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">22</span>
+                        <span class="date-month">Dec</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Responsive Web Design Best Practices</h3>
+                        <p>Learn the essential principles of responsive web design and how to create websites that look great on all devices. Explore mobile-first design, breakpoints, and modern CSS techniques...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">18</span>
+                        <span class="date-month">Dec</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Version Control with Git: A Developer's Guide</h3>
+                        <p>Master Git version control system with this comprehensive guide. Learn essential commands, branching strategies, and collaboration workflows that every developer needs to know...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pradeep Samarasinghe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
