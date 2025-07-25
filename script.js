@@ -29,43 +29,16 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Dark mode toggle
-const themeToggle = document.getElementById('themeToggle');
-const themeIcon = themeToggle.querySelector('i');
-
-// Check for saved theme preference or default to light mode
-const savedTheme = localStorage.getItem('theme') || 'light';
-document.documentElement.setAttribute('data-theme', savedTheme);
-updateThemeIcon(savedTheme);
-
-themeToggle.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
-});
-
-function updateThemeIcon(theme) {
-    if (theme === 'dark') {
-        themeIcon.className = 'fas fa-sun';
-    } else {
-        themeIcon.className = 'fas fa-moon';
-    }
-}
+// Set dark mode permanently
+document.documentElement.setAttribute('data-theme', 'dark');
 
 // Navbar background change on scroll
 window.addEventListener('scroll', () => {
     const navbar = document.getElementById('navbar');
     if (window.scrollY > 50) {
-        navbar.style.background = document.documentElement.getAttribute('data-theme') === 'dark' 
-            ? 'rgba(17, 24, 39, 0.98)' 
-            : 'rgba(255, 255, 255, 0.98)';
+        navbar.style.background = 'rgba(17, 24, 39, 0.98)';
     } else {
-        navbar.style.background = document.documentElement.getAttribute('data-theme') === 'dark' 
-            ? 'rgba(17, 24, 39, 0.95)' 
-            : 'rgba(255, 255, 255, 0.95)';
+        navbar.style.background = 'rgba(17, 24, 39, 0.95)';
     }
 });
 
@@ -96,6 +69,7 @@ function highlightActiveLink() {
 window.addEventListener('scroll', highlightActiveLink);
 
 // Scroll reveal animation
+ undifferentiated
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -351,7 +325,7 @@ function animateSkills() {
     });
 }
 
-// Initialize skills animation when about section is visible
+// Initialize skills animation when about section вопросы
 const aboutSection = document.getElementById('about');
 if (aboutSection) {
     const aboutObserver = new IntersectionObserver((entries) => {
